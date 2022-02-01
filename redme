@@ -1,0 +1,12 @@
+# print ("Welcome to Access Bank")
+# account_option = input ("do You have an account with us: 1 (yes) 2 (no) \n")
+
+# if account_option == "1" :
+#     acc_num = input ("enter your account number: \n")
+#     pin = input("enter your account pin: \n>")
+#     user = data.get(acc_num)   
+#     if user and user['pin'] == pin:
+#         print(f"welcome {user['name']}. \n your account balance is ${user['bal']}")
+#     else:
+#         print("invalid login")
+

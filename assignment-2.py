@@ -17,28 +17,44 @@ def init():
             login()
         elif(haveAccount == 2):
             isValidOptionSelected = True
-            register()
+            print(register())
         else: 
             print("you have selected an invalid option")
 
 
 def login():
-    print("this is a login function")
+    print("login to your account")
+
 
 def  register():
-    print("this is a register function")
+    print("Register your account")
+    email = input("input your email address \n ")
+    First_name = input ("input your first name \n")
+    last_name = input ("input your last name \n")
+    user_name = input ("input your user name \n")
+    password = input ("Create Password \n")
 
-def bankOperation():
-    print("some operation")
+
+    accountNum = accountNumber()
+
+    account[accountNum] = [ First_name, last_name, user_name, email, password]
+
+    print("you have sucessfully created an account")
+
+
+    login()
+
+def withdrawl():
+    print("withdrawal")
+
+
 
 def accountNumber():
-
-    print("account number generator")
     return random.randrange(1111111111,9999999999)
 
-print(accountNumber())
 
 
+init()
 
 # def accountNumber():
 # return random.randrange(1111111111,999999999)
